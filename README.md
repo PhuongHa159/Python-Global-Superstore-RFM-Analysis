@@ -98,6 +98,7 @@ print(RFM_table)
 **Data Visualization and Insight**
 
 **RFM Distribution Analysis**
+
  **Distribution of Recency**
 ```
   # Distribution of Recency
@@ -147,6 +148,7 @@ plt.show()
 <img width="535" alt="M" src="https://github.com/user-attachments/assets/aaa87991-fa72-4fa2-acb1-802cde79da0a" />
 
 **Key observations**: The majority of the company's customers belong to the low-spending group, with 3,087 customers spending under 1k, accounting for two-thirds of the total customer base. To increase revenue, the company needs to implement strategies to nurture and tap into the potential of customers with higher spending levels.
+
 **RFM Segments of Customer Count**
 
 ```
@@ -167,19 +169,29 @@ plt.show()
 <img width="616" alt="ALL" src="https://github.com/user-attachments/assets/65707da1-8fab-471b-84fe-a783124cfd30" />
 **Key observations**
 The Champion and Hibernating customer segments account for the highest proportion in the company.
+
 **1. Champion Customers (18.01%)**:
+
 **Insights**:
+
 The company has a notable group of loyal customers, contributing to a stable and sustainable revenue stream—a strong indicator of business performance.
+
 **Risks**:
 Over-reliance on this limited customer group poses significant risks. Any decline in this segment, due to market changes, competition, or other factors, could severely impact the company's revenue.
+
 **2. Hibernating Customers (18.63%)**:
+
 **Insights**:
 Hibernating customers make up the largest segment, suggesting that the company has lost touch with a substantial portion of previous buyers. This is a warning sign regarding the company’s ability to maintain long-term customer relationships.
+
 **Opportunities**:
 If the company can reconnect with this group, it has the potential to boost revenue and maximize long-term customer value.
+
 **Challenges**:
 This situation might highlight inefficiencies in the company’s strategies for customer retention and long-term engagement.
 
 ## V. Recommendations
+
 **For Champions**: Diversify the customer base to reduce dependency on this group while continuing to nurture loyalty.
+
 **For Hibernating Customers**: Launch targeted reactivation campaigns and evaluate current retention strategies to identify gaps and improve customer engagement efforts.
