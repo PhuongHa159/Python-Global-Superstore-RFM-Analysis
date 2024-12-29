@@ -3,19 +3,21 @@
 This project analyzes the RFM (Recency, Frequency, Monetary) metrics to segment customers for the marketing department of Superstore. The goal is to provide the necessary insights to help the marketing team launch tailored marketing campaigns for each customer group, thereby boosting sales during the upcoming Christmas and New Year season.
 ## II. Dataset
 This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+
 **Dataset Dictionary**
-**InvoiceNo**: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation.
-**StockCode**: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
-**Description**: Product (item) name. Nominal.
-**Quantity**: The quantities of each product (item) per transaction. Numeric.
-**InvoiceDate**: Invoice Date and time. Numeric, the day and time when each transaction was generated.
-**UnitPrice**: Unit price. Numeric, Product price per unit in sterling.
-**CustomerID**: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
-**Country**: Country name. Nominal, the name of the country where each customer resides.
+- **InvoiceNo**: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation.
+- **StockCode**: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
+- **Description**: Product (item) name. Nominal.
+- **Quantity**: The quantities of each product (item) per transaction. Numeric.
+- **InvoiceDate**: Invoice Date and time. Numeric, the day and time when each transaction was generated.
+- **UnitPrice**: Unit price. Numeric, Product price per unit in sterling.
+- **CustomerID**: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
+- **Country**: Country name. Nominal, the name of the country where each customer resides.
 ### III. Explore Data
 
 #### 1. Cleaning Data
 Data cleaning involves removing missing data, replacing missing values, and adjusting data types to ensure consistency. The steps include removing missing data when the proportion of missing values is low across the dataset, imputing missing values using metrics like mode, median, etc., eliminating duplicates, and correcting data types to maintain data integrity. Additionally, identifying and handling outlier values is crucial to ensuring the accuracy and consistency of the data.
+
 **Actions**
 ```
 df_raw = pd.DataFrame(df)
@@ -38,6 +40,7 @@ print(df_raw.head())
 ```
 
 **RFM Calculation and Segmentation**
+
 After cleaning the data, the **Recency**, **Frequency**, and **Monetary** values were calculated separately for each customer. **Recency** was determined based on the number of days since the last purchase, **Frequency** measured the total number of transactions, and **Monetary** represented the total spending of each customer. Once these individual metrics were calculated, they were combined to form the complete RFM score for each customer.
 ```
 #Create RFM Table
@@ -56,6 +59,7 @@ print(RFM_data.head())
 ```
 
 **Segmentation**
+
 Next, process the Segment file that has classified each group according to the RFM index to apply it to each customer.
 
 ```jsx
