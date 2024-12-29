@@ -149,7 +149,7 @@ plt.show()
 
 **Key observations**: The majority of the company's customers belong to the low-spending group, with 3,087 customers spending under 1k, accounting for two-thirds of the total customer base. To increase revenue, the company needs to implement strategies to nurture and tap into the potential of customers with higher spending levels.
 
-**RFM Segments of Customer Count**
+***RFM Segments of Customer Count***
 
 ```
 import squarify
@@ -168,7 +168,7 @@ plt.show()
 ```
 <img width="616" alt="ALL" src="https://github.com/user-attachments/assets/65707da1-8fab-471b-84fe-a783124cfd30" />
 
-**Key observations**
+**Key observations**:
 The Champion and Hibernating customer segments account for the highest proportion in the company.
 
 **1. Champion Customers (18.01%)**:
