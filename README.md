@@ -97,9 +97,9 @@ print(RFM_table)
 
 **Data Visualization and Insight**
 
-**RFM Distribution Analysis**
+***RFM Distribution Analysis***
 
- **Distribution of Recency**
+ - Distribution of Recency
 ```
   # Distribution of Recency
 fig,ax = plt.subplots(figsize=(12,3))
@@ -114,7 +114,7 @@ plt.show()
 
 **Key observations**: A large proportion of customers made repeat purchases within 100 days, accounting for over 2,600 customers. Notably, the highest number of customers returned for transactions within 20 days, indicating a strong customer retention rate. This is a promising sign for the sustainable growth of the business.
 
-**Distribution of Frequency**
+- Distribution of Frequency
 ```
 #Distribution of Frequency
 binsF = [0, 2, 5, 20, np.inf]
@@ -131,7 +131,7 @@ plt.show()
 
 **Key observations**: The number of customers making more than 20 transactions accounts for two-thirds of the total customer base, which is a very positive sign. This indicates that the company has built a large base of loyal customers, helping to maintain stable revenue. Additionally, it also reflects the quality of the company’s products and services, as they effectively meet customer needs and expectations. The repeated purchases by customers are a clear sign of satisfaction and trust in the brand, providing a strong foundation for the company’s sustainable growth.
 
-**Distribution of Monetary**
+- Distribution of Monetary
 ```
 #Distribution of Monetary
 binsF = [0,1000,5000,10000, np.inf]
@@ -167,6 +167,7 @@ plt.axis('off')
 plt.show()
 ```
 <img width="616" alt="ALL" src="https://github.com/user-attachments/assets/65707da1-8fab-471b-84fe-a783124cfd30" />
+
 **Key observations**
 The Champion and Hibernating customer segments account for the highest proportion in the company.
 
